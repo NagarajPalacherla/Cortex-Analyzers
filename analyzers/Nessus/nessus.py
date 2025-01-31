@@ -89,10 +89,10 @@ class NessusAnalyzer(Analyzer):
             'login': self.login,
             'password': self.password
         }
-        if self.ca_bundle is not None:
-            scanner_args.update({'ca_bundle': self.ca_bundle})
-        else:
-            scanner_args.update({'insecure': True})
+       # if self.ca_bundle is not None:
+         #   scanner_args.update({'ca_bundle': self.ca_bundle})
+       # else:
+        #    scanner_args.update({'insecure': True})
 
         try:
             scanner = ness6rest.Scanner(**scanner_args)
